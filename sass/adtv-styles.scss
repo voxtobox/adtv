@@ -1,0 +1,25 @@
+
+//
+// Imports
+//
+
+@import 'reset';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'fix-lg-size';
+@import 'variables';
+
+// My Partials
+@import 'partials/elements';
+@import 'partials/header';
+@import 'partials/main';
+
+
+/*
+* ADTV styles
+*/
+
+body {
+  background-color: $main-bg-color;
+  @include main-font;
+}
+

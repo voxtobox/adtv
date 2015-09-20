@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>-->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="tv-page">
+    <header class="tv-page__header">
+        <div class="tv-page-header">
+            <div class="tv-header__nav">
+                <nav class="tv-top-navbar">
+                    <div class="tv-top-navbar__brand">
+                        <a href="#" class="tv-top-navbar-brand__logo">
+                            <img class="tv-top-navbar-brand-logo__img" src="img/adtv-logo.png">
+                        </a>
+                        <p class="tv-top-navbar-brand__slogan">
+                            Exposing Deceptions. Affirming the Truth.
+                        </p>
+                    </div>
+                    <div class="tv-top-navbar__nav">
+                        <ul class="tv-top-navbar-nav">
+                            <li class="tv-top-nav__item">
+                                <a href="" class="tv-top-nav-item__link tv-link">Satellite Channel</a>
+                            </li>
+                            <li class="tv-top-nav__item">
+                                <a href="" class="tv-top-nav-item__link tv-link">About us</a>
+                            </li>
+                            <li class="tv-top-nav__item">
+                                <a href="" class="tv-top-nav-item__link tv-link">Contact us</a>
+                            </li>
+                            <li class="tv-top-nav__item">
+                                <a href="" class="tv-top-nav-item__link tv-link">Donate</a>
+                            </li>
+                            <li class="tv-top-nav__item">
+                                <a href="" class="tv-top-nav-item__link tv-link">Register</a>
+                            </li>
+                        </ul>
+                        <span class="tv-header-navbar__sign">
+                            <a href="" class="tv-top-nav-item__link">Sign In</a>
+                        </span>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="tv-header__banner">
+                <img class="tv-header-banner__img" src="img/adtv-banner.jpg" alt="banner"/>
+            </div>
+        </div>
+    </header>
+    <div class="tv-page__main">
+        <div class="tv-page-main">
+            <section class="tv-main__filters">
+                <div class="tv-filters">
+                    <div class="tv-filters__title">
+                        Filters
+                    </div>
+                    <div class="tv-filters__block">
+                        <div class="tv-filters-block__title">Language</div>
+                        <div class="tv-filters-block__checkboxes">
+                            <form name="language" class="tv-filters-block-checkboxes">
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-lan-english" type="checkbox" name="english" value="english"/>
+                                    <label class="tv-checkbox-label" for="chbx-lan-english">English</label>
+                                </div>
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-lan-other" type="checkbox" name="other" value="other"/>
+                                    <label class="tv-checkbox-label" for="chbx-lan-other">Other</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tv-filters__block">
+                        <div class="tv-filters-block__title">Topics/Categories</div>
+                        <div class="tv-filters-block__checkboxes">
+                            <form name="language" class="tv-filters-block-checkboxes">
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-cat-our_times" type="checkbox" name="our_times" value="our_times"/>
+                                    <label class="tv-checkbox-label" for="chbx-cat-our_times">Our Times</label>
+                                </div>
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-cat-bible_topics" type="checkbox" name="bible_topics" value="bible_topics"/>
+                                    <label class="tv-checkbox-label" for="chbx-cat-bible_topics">Bible Topics</label>
+                                </div>
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-cat-creation" type="checkbox" name="creation" value="creation"/>
+                                    <label class="tv-checkbox-label" for="chbx-cat-creation">Creation</label>
+                                </div>
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-cat-reformation" type="checkbox" name="reformation" value="reformation"/>
+                                    <label class="tv-checkbox-label" for="chbx-cat-reformation">Reformation</label>
+                                </div>
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-cat-media" type="checkbox" name="media" value="media"/>
+                                    <label class="tv-checkbox-label" for="chbx-cat-media">Media</label>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tv-filters__block">
+                        <div class="tv-filters-block__title">FORMAT</div>
+                        <div class="tv-filters-block__checkboxes">
+                            <form name="language" class="tv-filters-block-checkboxes">
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-format-major_series" type="checkbox" name="major_series" value="major_series"/>
+                                    <label class="tv-checkbox-label" for="chbx-format-major_series">Major Series</label>
+                                </div>
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-format-single_sermons" type="checkbox" name="single_sermons" value="single_sermons"/>
+                                    <label class="tv-checkbox-label" for="chbx-format-single_sermons">Single Sermons</label>
+                                </div>
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-format-documentaries" type="checkbox" name="documentaries" value="documentaries"/>
+                                    <label class="tv-checkbox-label" for="chbx-format-documentaries">Documentaries</label>
+                                </div>
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-format-news" type="checkbox" name="news" value="news"/>
+                                    <label class="tv-checkbox-label" for="chbx-format-news">News</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tv-filters__block tv-filters__block_last">
+                        <div class="tv-filters-block__title">SPEAKER</div>
+                        <div class="tv-filters-block__checkboxes">
+                            <form name="language" class="tv-filters-block-checkboxes">
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-speaker-walter_veith" type="checkbox" name="major_series" value="major_series"/>
+                                    <label class="tv-checkbox-label" for="chbx-speaker-walter_veith">Walter Veith</label>
+                                </div>
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-speaker-victor_gill" type="checkbox" name="victor_gill" value="victor_gill"/>
+                                    <label class="tv-checkbox-label" for="chbx-speaker-victor_gill">Victor Gill</label>
+                                </div>
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-speaker-daniel_pel" type="checkbox" name="daniel_pel" value="daniel_pel"/>
+                                    <label class="tv-checkbox-label" for="chbx-speaker-daniel_pel">Daniel Pel</label>
+                                </div>
+                                <div class="tv-filters-block-checkboxes__item">
+                                    <input class="tv-checkbox" id="chbx-speaker-others" type="checkbox" name="others" value="others"/>
+                                    <label class="tv-checkbox-label" for="chbx-speaker-others">Others</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tv-filters__buttons">
+                        <div class="tv-filtesrs-buttons">
+                            <div class="tv-buttons__item">
+                                <button class="tv-btn">
+                                    Satellite Info
+                                </button>
+                            </div>
+                            <div class="tv-buttons__item">
+                                <button class="tv-btn">
+                                    Watch live!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tv-main__result">
+                <div class="tv-videos">
+                    <div class="tv-videos__tails">
+                        <div class="tv-tails">
+                            <div class="tv-tails__item">
+                               <div class="tv-tails-item">
+                                   <img class="tv-tails-item__img" style="background-image: url('img/thumb_1.jpg')">
+                                   <div class="tv-tails-item__title">
+                                       <div class="tv-thumb-title">
+                                           <span class="tv-thumb-title__text">
+                                               Title 1
+                                           </span>
+                                       </div>
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="tv-tails__item">
+                                <div class="tv-tails-item">
+                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_2.jpg')">
+                                    <div class="tv-tails-item__title">
+                                        <div class="tv-thumb-title">
+                                           <span class="tv-thumb-title__text">
+                                               Title 1
+                                           </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tv-tails__item">
+                                <div class="tv-tails-item">
+                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_3.jpg')">
+                                    <div class="tv-tails-item__title">
+                                        <div class="tv-thumb-title">
+                                           <span class="tv-thumb-title__text">
+                                               Title 1
+                                           </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tv-tails__item">
+                                <div class="tv-tails-item">
+                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_1.jpg')">
+                                    <div class="tv-tails-item__title">
+                                        <div class="tv-thumb-title">
+                                           <span class="tv-thumb-title__text">
+                                               Title 1
+                                           </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tv-tails__item">
+                                <div class="tv-tails-item">
+                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_2.jpg')">
+                                    <div class="tv-tails-item__title">
+                                        <div class="tv-thumb-title">
+                                           <span class="tv-thumb-title__text">
+                                               Title 1
+                                           </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tv-tails__item">
+                                <div class="tv-tails-item">
+                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_3.jpg')">
+                                    <div class="tv-tails-item__title">
+                                        <div class="tv-thumb-title">
+                                           <span class="tv-thumb-title__text">
+                                               Title 1
+                                           </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tv-tails__item">
+                                <div class="tv-tails-item">
+                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_1.jpg')">
+                                    <div class="tv-tails-item__title">
+                                        <div class="tv-thumb-title">
+                                           <span class="tv-thumb-title__text">
+                                               Title 1
+                                           </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tv-tails__item">
+                                <div class="tv-tails-item">
+                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_2.jpg')">
+                                    <div class="tv-tails-item__title">
+                                        <div class="tv-thumb-title">
+                                           <span class="tv-thumb-title__text">
+                                               Title 1
+                                           </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tv-videos__pagination">
+                        <nav class="tv-pagination">
+                            <ul class="tv-pagination-list">
+                                <li class="tv-pagination__item">
+                                    <a href="#" class="tv-link ">
+                                        &lt;&lt; FIRST
+                                    </a>
+                                </li>
+                                <li class="tv-pagination__item">
+                                    <a href="#" class="tv-link">
+                                        &lt; PREV
+                                    </a>
+                                </li>
+                                <li class="tv-pagination__item">
+                                    <a href="#" class="tv-link tv-link_current">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="tv-pagination__item">
+                                    <a href="#" class="tv-link">
+                                        2
+                                    </a>
+                                </li>
+                                <li class="tv-pagination__item">
+                                    <a href="#" class="tv-link">
+                                        3
+                                    </a>
+                                </li>
+                                <li class="tv-pagination__item">
+                                    <a href="#" class="tv-link">
+                                        4
+                                    </a>
+                                </li>
+                                <li class="tv-pagination__item tv-pagination__item_dots">
+                                        ...
+                                </li>
+                                <li class="tv-pagination__item">
+                                    <a href="#" class="tv-link">
+                                        NEXT &gt;
+                                    </a>
+                                </li>
+                                <li class="tv-pagination__item">
+                                    <a href="#" class="tv-link">
+                                        LAST &gt;&gt;
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="tv-page__footer">
+
+    </footer>
+</body>
+</html>

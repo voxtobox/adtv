@@ -1,0 +1,66 @@
+// Headers styles
+
+.tv-page__header {
+  background-color: $header-bg-color;
+}
+
+.tv-page-header {
+  @extend .container;
+}
+
+.tv-top-navbar {
+  @extend .navbar;
+  background-color: transparent;
+  border: none;
+
+  a {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.tv-top-navbar-brand__logo{
+  @extend .navbar-brand;
+}
+
+.tv-top-navbar-brand__slogan{
+  @extend .navbar-text;
+  font-style: italic;
+  font-size: 10px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.tv-top-navbar__nav {
+  margin-top: 37px;
+}
+
+.tv-top-navbar-nav {
+  @extend .navbar-nav, .nav;
+
+  padding-left: 40px;
+}
+
+.tv-top-nav__item {
+  color: $link-color;
+
+  .tv-top-nav-item__link {
+    padding: 0 20px;
+
+    &:hover {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  }
+}
+
+.tv-header-navbar__sign {
+  float: right;
+  font-size: 1.2em;
+}
+
+.tv-header__banner{
+  @extend .text-center;
+}

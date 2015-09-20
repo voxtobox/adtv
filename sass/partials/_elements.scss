@@ -1,0 +1,28 @@
+//
+// Link & buttons
+//
+
+.tv-link {
+  color: $link-color;
+
+  &:hover {
+    background-color: transparent;
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  &_current{
+    color: #fff;
+
+  }
+}
+
+.tv-btn {
+  @include dark-border;
+  @include border-radius(1px);
+
+  background-color: $main-bg-color;
+  width: 95px;
+  height: 25px;
+  font-size: 1em;
+}
