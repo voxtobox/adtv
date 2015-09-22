@@ -4,13 +4,14 @@
 //
 
 @import 'reset';
-@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-@import 'fix-lg-size';
+//@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'variables';
+@import 'fix-bootstrap';
 
 // My Partials
 @import 'partials/elements';
 @import 'partials/header';
+@import 'partials/search';
 @import 'partials/main';
 
 
@@ -20,6 +21,6 @@
 
 body {
   background-color: $main-bg-color;
-  @include main-font;
+  @extend .main-font;
 }
 

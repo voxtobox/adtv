@@ -2,14 +2,17 @@
 // Link & buttons
 //
 
+// Common link
 .tv-link {
   color: $link-color;
 
-  &:hover {
-    background-color: transparent;
+  &:hover, &:focus {
+    //background-color: transparent;
     text-decoration: underline;
     color: #fff;
   }
+
+  //
 
   &_current{
     color: #fff;
@@ -17,12 +20,163 @@
   }
 }
 
+// Common button
 .tv-btn {
-  @include dark-border;
+  @extend .dark-element, .tv-btn-gradient, .tv-btn-shadow;
   @include border-radius(1px);
 
   background-color: $main-bg-color;
   width: 95px;
   height: 25px;
   font-size: 1em;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+  /*&:hover {
+    top: -1px;
+    box-shadow: inset $light-line-shadow, 0 2px 1px rgba(0,0,0,.2);
+  }*/
+  &:active {
+    @extend .tv-form-element-shadow;
+    background: $btn-gradient-2;
+    /* box-shadow: none; */
+    top: 1px;
+  }
+}
+
+
+//
+// Form
+//
+
+
+.tv-input-text{
+  @extend .dark-element;
+  @extend .tv-inset-shadow;
+  padding: 5px;
+}
+
+.tv-checkbox {
+  /*width: 15px;
+  height: 15px;*/
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  .tv-checkbox-check {
+    @extend .tv-btn-gradient, .tv-form-element-shadow;
+    @include border-radius(3px);
+    margin: 0;
+    border: 1px solid $dark-border2;
+    width: 13px;
+    height: 12px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    box-sizing: content-box;
+    &:after {
+      content: '';
+      width: 8px;
+      height: 4px;
+      position: absolute;
+      top: 4px;
+      left: 3px;
+      border: 2px solid $link-color;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .tv-checkbox-check::after{
+    opacity: 0.3;
+  }
+
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label{
+      @extend .tv-form-elem-pushed-shadow;
+      background: $third-bg-color;
+    }
+    &:checked + label:after {
+      opacity: 1;
+    }
+  }
+
+  .tv-checkbox-label {
+    font-weight: 100;
+    margin: 0 0 0 7px;
+  }
+}
+
+.tv-select-label {
+  margin-right: 5px;
+  font-weight: 200;
+  font-size: .8em;
+}
+
+.tv-select {
+  @extend .tv-form-element-shadow, .tv-select-gradient;
+
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  border: 1px solid $dark-border2;
+  padding: 0px 8px;
+  line-height: 20px;
+
+  font-size: .9em;
+
+  // Disable browsers styles
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  -webkit-border-radius: 0;  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -moz-border-radius: 0;  /* Firefox 1-3.6 */
+  border-radius: 0;  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  &::-ms-expand { /* for IE 11 */
+    display: none;
+  }
+
+
+  &:focus, &:active {
+    outline: none;
+  }
+
+
+  /*-webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  background-color: #F07575; /!* fallback color if gradients are not supported *!/
+  background-image: url(../img/select-arrow.png), -webkit-linear-gradient(top, #E5E5E5, #F4F4F4); /!* For Chrome and Safari *!/
+  background-image: url(../img/select-arrow.png), -moz-linear-gradient(top, #E5E5E5, #F4F4F4); /!* For old Fx (3.6 to 15) *!/
+  background-image: url(../img/select-arrow.png), -ms-linear-gradient(top, #E5E5E5, #F4F4F4); /!* For pre-releases of IE 10*!/
+  background-image: url(../img/select-arrow.png), -o-linear-gradient(top, #E5E5E5, #F4F4F4); /!* For old Opera (11.1 to 12.0) *!/
+  background-image: url(../img/select-arrow.png), linear-gradient(to bottom, #E5E5E5, #F4F4F4); /!* Standard syntax; must be last *!/
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;*/
+
 }

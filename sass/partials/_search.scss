@@ -1,0 +1,50 @@
+//
+// Search section
+//
+
+.tv-page__search {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.tv-search {
+  height: 25px;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 25px;
+}
+
+.tv-search-result{
+  font-size: 1.2em;
+}
+
+.tv-search-result__number {
+  font-weight: bold;
+  width: 30px;
+  display: inline-block;
+}
+
+.tv-search-result__title {
+  font-weight: 100;
+}
+
+.tv-search-text__label {
+ font-weight: 400;
+  margin-right: 5px;
+}
+
+.tv-search-text__input {
+  width: 300px;
+  padding: 0 5px;
+}
+
+.tv-search-sort-by__select {
+  width: 150px;
+  padding: 0 8px;
+
+}
+
+.tv-search-per-page__select {
+  width: 50px;
+  padding: 0 8px;
+}

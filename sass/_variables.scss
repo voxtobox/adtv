@@ -4,49 +4,130 @@
 
 
 
-$link-color: #4585A8;
-$header-bg-color: #1d1d1d;
+
+// Background colors: main, second - dark element, third - header and footer
 $main-bg-color: #262626;
 $second-bg-color: #212121;
+$third-bg-color: #1d1d1d;
 
+// Border colors
 $dark-border: #191919;
+$dark-border2: #1f1f1f;
 
-@mixin dark-border {
-  border: 1px solid $dark-border;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
+// Main color for font
+$main-color: #aaa;
 
-@mixin main-font {
-  color: #aaa;
-  font-size: 9px;
-  font-weight: 200;
-}
+// Link color
+$link-color: #4585A8;
 
-@mixin in-shadow {
-  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
-  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
-}
+// Two colors gradient for buttons and forms elements
+$btn-gradient-1: #2f2f2f;
+$btn-gradient-2: #242424;
 
-//Universal mixin
+// Shadows
+$inset-shadow: 0 1px 1px rgba(0,0,0,0.4);
+$light-line-shadow: 0 2px 0 -1px rgba(255, 255, 255, .1);
+$bulge-shadow: 0 1px 1px rgba(0,0,0,.2);
+$separator-shadow: 0 3px 1px -2px rgba(255,255,255,.1);
 
-@mixin no-pad {
-  padding: 0;
-}
+// Path to arrow for select image
+$arrow-for-select: '../img/select-arrow.png';
 
-@mixin no-margin {
-  margin: 0;
-}
 
+
+// Mixin for border radius with vendor prefix
 @mixin border-radius($val) {
   -webkit-border-radius: $val;
   -moz-border-radius: $val;
   border-radius: $val;
 }
 
-@mixin fill-parent {
+// Dark element in main section
+.dark-element {
+  border: 1px solid $dark-border;
+  @include border-radius(3px);
+  background-color: $second-bg-color;
+}
+
+// Set main font
+.main-font {
+  color: $main-color;
+  font-size: 11px;
+  font-weight: 200;
+}
+
+// Shadow for inset effect
+.tv-inset-shadow {
+  -webkit-box-shadow: inset $inset-shadow;
+  -moz-box-shadow: inset $inset-shadow;
+  box-shadow: inset $inset-shadow;
+}
+
+// Shadow for pushed form element
+.tv-form-elem-pushed-shadow {
+  -webkit-box-shadow: inset $inset-shadow, $light-line-shadow;
+  -moz-box-shadow: inset $inset-shadow, $light-line-shadow;
+  box-shadow: inset $inset-shadow, $light-line-shadow;
+}
+
+// Shadow for cut effect for form element (white bottom line)
+.tv-form-element-shadow {
+  -webkit-box-shadow: $light-line-shadow;
+  -moz-box-shadow: $light-line-shadow;
+  box-shadow: $light-line-shadow;
+}
+
+// Shadow for box separator line in filter section (white bottom line)
+.tv-box-separ-shadow {
+  -webkit-box-shadow: $separator-shadow;
+  -moz-box-shadow: $separator-shadow;
+  box-shadow: $separator-shadow;
+}
+
+
+// Shadow for 3d effect for button (white top line and outline shadow)
+.tv-btn-shadow {
+  -webkit-box-shadow: inset $light-line-shadow, $bulge-shadow;
+  -moz-box-shadow: inset $light-line-shadow, $bulge-shadow;
+  box-shadow: inset $light-line-shadow, $bulge-shadow;
+}
+
+// Gradient for btn and form elements
+.tv-btn-gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$btn-gradient-1+0,242424+100,333333+100 */
+  background: $btn-gradient-1; /* Old browsers */
+  background: -moz-linear-gradient(top,  $btn-gradient-1 0%, $btn-gradient-2 100%, $btn-gradient-1 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$btn-gradient-1), color-stop(100%,$btn-gradient-2), color-stop(100%,$btn-gradient-1)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $btn-gradient-1 0%,$btn-gradient-2 100%,$btn-gradient-1 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $btn-gradient-1 0%,$btn-gradient-2 100%,$btn-gradient-1 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $btn-gradient-1 0%,$btn-gradient-2 100%,$btn-gradient-1 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  $btn-gradient-1 0%,$btn-gradient-2 100%,$btn-gradient-1 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$btn-gradient-1', endColorstr='$btn-gradient-1',GradientType=0 ); /* IE6-9 */
+}
+
+// Gradient for select element with arrow image and gradient
+.tv-select-gradient {
+  background: $btn-gradient-1; /* Old browsers */
+  background: url($arrow-for-select), -moz-linear-gradient(top,  $btn-gradient-1 0%, $btn-gradient-2 100%, $btn-gradient-1 100%); /* FF3.6+ */
+  background: url($arrow-for-select), -webkit-gradient(linear, left top, left bottom, color-stop(0%,$btn-gradient-1), color-stop(100%,$btn-gradient-2), color-stop(100%,$btn-gradient-1)); /* Chrome,Safari4+ */
+  background: url($arrow-for-select), -webkit-linear-gradient(top,  $btn-gradient-1 0%,$btn-gradient-2 100%,$btn-gradient-1 100%); /* Chrome10+,Safari5.1+ */
+  background: url($arrow-for-select), -o-linear-gradient(top,  $btn-gradient-1 0%,$btn-gradient-2 100%,$btn-gradient-1 100%); /* Opera 11.10+ */
+  background: url($arrow-for-select), -ms-linear-gradient(top,  $btn-gradient-1 0%,$btn-gradient-2 100%,$btn-gradient-1 100%); /* IE10+ */
+  background: url($arrow-for-select), linear-gradient(to bottom,  $btn-gradient-1 0%,$btn-gradient-2 100%,$btn-gradient-1 100%); /* W3C */
+}
+
+//Universal mixin
+
+.no-pad {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+// fill parent element
+.fill-parent {
   position: absolute;
   top: 0;
   bottom: 0;
