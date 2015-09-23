@@ -5,10 +5,6 @@
 .tv-page__main {
   //@extend .container;
 }
-.tv-page-main {
- // @extend .row, .center-block;
-  //max-width: $container-width;
-}
 
 //
 //  Filter section
@@ -38,6 +34,7 @@
 .tv-filters__title {
   font-size: 2em;
   font-weight: 100;
+  color: $second-color;
 }
 
 .tv-filters__block {
@@ -60,6 +57,9 @@
 
 .tv-filters-block__checkboxes {
   padding-top: 10px;
+}
+.tv-filters-block-checkboxes__item {
+  margin-bottom: 3px;
 }
 
 /*.tv-filters-block-checkboxes__item {

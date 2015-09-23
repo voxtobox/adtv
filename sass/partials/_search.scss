@@ -8,14 +8,18 @@
 }
 
 .tv-search {
-  height: 25px;
   color: #fff;
   font-size: 1.1em;
   line-height: 25px;
+  font-weight: 300;
 }
 
 .tv-search-result{
   font-size: 1.2em;
+}
+
+.tv-search-result__title {
+  color: $main-color;
 }
 
 .tv-search-result__number {
@@ -41,7 +45,6 @@
 .tv-search-sort-by__select {
   width: 150px;
   padding: 0 8px;
-
 }
 
 .tv-search-per-page__select {

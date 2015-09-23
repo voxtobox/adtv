@@ -5,6 +5,7 @@
 // Common link
 .tv-link {
   color: $link-color;
+  font-weight: 300;
 
   &:hover, &:focus {
     //background-color: transparent;
@@ -12,11 +13,12 @@
     color: #fff;
   }
 
-  //
-
-  &_current{
+  &_current {
     color: #fff;
+  }
 
+  &_footer {
+    color: $main-color;
   }
 }
 
@@ -28,8 +30,9 @@
   background-color: $main-bg-color;
   width: 95px;
   height: 25px;
-  font-size: 1em;
+  font-size: .9em;
   position: relative;
+  font-weight: 300;
 
   &:focus {
     outline: none;
@@ -73,7 +76,6 @@
     height: 12px;
     cursor: pointer;
     position: absolute;
-    top: 2px;
     left: 0;
     box-sizing: content-box;
     &:after {

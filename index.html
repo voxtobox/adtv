@@ -3,52 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+   <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>-->
     <link rel="stylesheet" href="css/style.css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,300italic,100' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body class="tv-page">
     <header class="tv-page__header">
+        <div class="tv-header__nav">
+            <nav class="tv-top-navbar navbar">
+                <div class="tv-top-havbar-container container">
+                    <div class="tv-top-navbar__header navbar-header">
+                        <a href="#" class="tv-top-navbar-brand__logo navbar-brand">
+                            <img class="tv-top-navbar-brand-logo__img" src="img/adtv-logo.png">
+                        </a>
+                        <p class="tv-top-navbar-brand__slogan navbar-text hidden-sm">
+                            Exposing Deceptions. Affirming the Truth.
+                        </p>
+                    </div>
+                    <div class="tv-top-navbar__nav ">
+                        <ul class="tv-top-navbar-nav navbar-nav nav">
+                            <li class="tv-top-nav__item">
+                                <a href="" class="tv-top-nav-item__link tv-link">Satellite Channel</a>
+                            </li>
+                            <li class="tv-top-nav__item">
+                                <a href="" class="tv-top-nav-item__link tv-link">About us</a>
+                            </li>
+                            <li class="tv-top-nav__item">
+                                <a href="" class="tv-top-nav-item__link tv-link">Contact us</a>
+                            </li>
+                            <li class="tv-top-nav__item">
+                                <a href="" class="tv-top-nav-item__link tv-link">Donate</a>
+                            </li>
+                            <li class="tv-top-nav__item">
+                                <a href="" class="tv-top-nav-item__link tv-link">Register</a>
+                            </li>
+                        </ul>
+                        <ul class="tv-header-navbar__sign nav navbar-nav navbar-right">
+                            <li class="tv-top-nav__item">
+                                <!--<span class="">-->
+                                    <a href="" class="tv-top-nav-item__link navbar-link tv-link">Sign In</a>
+                                <!--</span>-->
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
         <div class="tv-header container">
             <div class="row">
-                <div class="tv-header__nav col-md-12">
-                    <nav class="tv-top-navbar navbar">
-                        <div class="container">
-                            <div class="tv-top-navbar__brand navbar-header">
-                                <a href="#" class="tv-top-navbar-brand__logo navbar-brand">
-                                    <img class="tv-top-navbar-brand-logo__img" src="img/adtv-logo.png">
-                                </a>
-                                <p class="tv-top-navbar-brand__slogan navbar-text">
-                                    Exposing Deceptions. Affirming the Truth.
-                                </p>
-                            </div>
-                            <div class="tv-top-navbar__nav">
-                                <ul class="tv-top-navbar-nav navbar-nav nav">
-                                    <li class="tv-top-nav__item">
-                                        <a href="" class="tv-top-nav-item__link tv-link">Satellite Channel</a>
-                                    </li>
-                                    <li class="tv-top-nav__item">
-                                        <a href="" class="tv-top-nav-item__link tv-link">About us</a>
-                                    </li>
-                                    <li class="tv-top-nav__item">
-                                        <a href="" class="tv-top-nav-item__link tv-link">Contact us</a>
-                                    </li>
-                                    <li class="tv-top-nav__item">
-                                        <a href="" class="tv-top-nav-item__link tv-link">Donate</a>
-                                    </li>
-                                    <li class="tv-top-nav__item">
-                                        <a href="" class="tv-top-nav-item__link tv-link">Register</a>
-                                    </li>
-                                </ul>
-                                <span class="tv-header-navbar__sign">
-                                    <a href="" class="tv-top-nav-item__link tv-link">Sign In</a>
-                                </span>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
                 <div class="tv-header__banner text-center col-md-12">
                     <img class="tv-header-banner__img" src="img/adtv-banner.jpg" alt="banner"/>
                 </div>
@@ -57,7 +63,7 @@
     </header>
     <div class="tv-page__search container">
         <div class="tv-search row">
-            <div class="tv-search__item col-md-2">
+            <div class="tv-search__item col-md-2 ">
                 <div class="tv-search-result">
                     <span class="tv-search-result__number">
                         45
@@ -67,15 +73,8 @@
                     </span>
                 </div>
             </div>
-            <div class="tv-search__item col-md-5">
-                <div class="tv-search-text">
-                    <label class="tv-search-text__label text-uppercase">
-                        SEARCH
-                    </label>
-                    <input class="tv-search-text__input tv-input-text" type="text"/>
-                </div>
-            </div>
-            <div class="tv-search__item col-md-3">
+
+            <div class="tv-search__item col-md-3 col-md-push-5">
                 <div class="tv-search-sort-by">
                     <label for="tv-sort-by" class="tv-search-sort-by__label tv-select-label">Sort by</label>
                     <select name="sort-by" id="tv-sort-by" class="tv-search-sort-by__select tv-select">
@@ -85,7 +84,7 @@
                     </select>
                 </div>
             </div>
-            <div class="tv-search__item col-md-2">
+            <div class="tv-search__item col-md-2 col-md-push-5">
                 <div class="tv-search-per-page">
                     <label class="tv-search-per-page__label tv-select-label">Per page</label>
                     <select name="per-page" id="tv-per-page" class="tv-search-per-page__select tv-select">
@@ -95,10 +94,18 @@
                     </select>
                 </div>
             </div>
+            <div class="tv-search__item col-md-5 col-md-pull-5">
+                <div class="tv-search-text">
+                    <label class="tv-search-text__label text-uppercase">
+                        SEARCH
+                    </label>
+                    <input class="tv-search-text__input tv-input-text" type="text"/>
+                </div>
+            </div>
         </div>
     </div>
     <main class="tv-page__main container">
-        <div class="tv-page-main row">
+        <div class="tv-main row">
             <section class="tv-main__filters col-md-2">
                 <div class="tv-filters panel panel-default">
                     <div class="tv-filters__title">
@@ -126,7 +133,7 @@
                         </div>
                     </div>
                     <div class="tv-filters__block">
-                        <div class="tv-filters-block__title">Topics/Categories</div>
+                        <div class="tv-filters-block__title text-uppercase">TOPICS/CATEGORIES</div>
                         <div class="tv-filters-block__checkboxes">
                             <form name="language" class="tv-filters-block-checkboxes">
                                 <div class="tv-filters-block-checkboxes__item">
@@ -169,7 +176,7 @@
                         </div>
                     </div>
                     <div class="tv-filters__block">
-                        <div class="tv-filters-block__title">FORMAT</div>
+                        <div class="tv-filters-block__title text-uppercase">FORMAT</div>
                         <div class="tv-filters-block__checkboxes">
                             <form name="language" class="tv-filters-block-checkboxes">
                                 <div class="tv-filters-block-checkboxes__item">
@@ -204,7 +211,7 @@
                         </div>
                     </div>
                     <div class="tv-filters__block">
-                        <div class="tv-filters-block__title">SPEAKER</div>
+                        <div class="tv-filters-block__title text-uppercase">SPEAKER</div>
                         <div class="tv-filters-block__checkboxes">
                             <form name="language" class="tv-filters-block-checkboxes">
                                 <div class="tv-filters-block-checkboxes__item">
@@ -269,7 +276,7 @@
                     <div class="tv-videos__tails">
                         <div class="tv-tails row">
                             <div class="tv-tails__item col-md-3">
-                               <div class="tv-tails-item text-center">
+                               <a href="#" class="tv-tails-item text-center tv-link">
                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_1.jpg')">
                                    <div class="tv-tails-item__title">
                                        <div class="tv-thumb-title">
@@ -278,10 +285,10 @@
                                            </span>
                                        </div>
                                    </div>
-                               </div>
+                               </a>
                             </div>
                             <div class="tv-tails__item col-md-3">
-                                <div class="tv-tails-item text-center">
+                                <a href="#" class="tv-tails-item text-center tv-link">
                                     <img class="tv-tails-item__img" style="background-image: url('img/thumb_2.jpg')">
                                     <div class="tv-tails-item__title">
                                         <div class="tv-thumb-title">
@@ -290,10 +297,10 @@
                                            </span>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="tv-tails__item col-md-3">
-                                <div class="tv-tails-item text-center">
+                                <a href="#" class="tv-tails-item text-center tv-link">
                                     <img class="tv-tails-item__img" style="background-image: url('img/thumb_3.jpg')">
                                     <div class="tv-tails-item__title">
                                         <div class="tv-thumb-title">
@@ -302,46 +309,10 @@
                                            </span>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="tv-tails__item col-md-3">
-                                <div class="tv-tails-item text-center">
-                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_1.jpg')">
-                                    <div class="tv-tails-item__title">
-                                        <div class="tv-thumb-title">
-                                           <span class="tv-thumb-title__text">
-                                               Title 1
-                                           </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tv-tails__item col-md-3">
-                                <div class="tv-tails-item text-center">
-                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_2.jpg')">
-                                    <div class="tv-tails-item__title">
-                                        <div class="tv-thumb-title">
-                                           <span class="tv-thumb-title__text">
-                                               Title 1
-                                           </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tv-tails__item col-md-3">
-                                <a href="#" class="tv-tails-item text-center tv-link">
-                                        <img class="tv-tails-item__img" style="background-image: url('img/thumb_3.jpg')">
-                                        <div class="tv-tails-item__title">
-                                            <div class="tv-thumb-title">
-                                               <span class="tv-thumb-title__text">
-                                                   Title 1
-                                               </span>
-                                            </div>
-                                        </div>
                                 </a>
                             </div>
                             <div class="tv-tails__item col-md-3">
-                                <div class="tv-tails-item text-center">
+                                <a href="#" class="tv-tails-item text-center tv-link">
                                     <img class="tv-tails-item__img" style="background-image: url('img/thumb_1.jpg')">
                                     <div class="tv-tails-item__title">
                                         <div class="tv-thumb-title">
@@ -350,10 +321,10 @@
                                            </span>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="tv-tails__item col-md-3">
-                                <div class="tv-tails-item text-center">
+                                <a href="#" class="tv-tails-item text-center tv-link">
                                     <img class="tv-tails-item__img" style="background-image: url('img/thumb_2.jpg')">
                                     <div class="tv-tails-item__title">
                                         <div class="tv-thumb-title">
@@ -362,7 +333,43 @@
                                            </span>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
+                            </div>
+                            <div class="tv-tails__item col-md-3">
+                                <a href="#" class="tv-tails-item text-center tv-link">
+                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_3.jpg')">
+                                    <div class="tv-tails-item__title">
+                                        <div class="tv-thumb-title">
+                                           <span class="tv-thumb-title__text">
+                                               Title 1
+                                           </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tv-tails__item col-md-3">
+                                <a href="#" class="tv-tails-item text-center tv-link">
+                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_1.jpg')">
+                                    <div class="tv-tails-item__title">
+                                        <div class="tv-thumb-title">
+                                           <span class="tv-thumb-title__text">
+                                               Title 1
+                                           </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="tv-tails__item col-md-3">
+                                <a href="#" class="tv-tails-item text-center tv-link">
+                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_2.jpg')">
+                                    <div class="tv-tails-item__title">
+                                        <div class="tv-thumb-title">
+                                           <span class="tv-thumb-title__text">
+                                               Title 1
+                                           </span>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -422,8 +429,114 @@
     </main>
     <footer class="tv-page__footer">
         <div class="tv-footer container">
-            <div class="row">
-            </div>
+            <nav class="row">
+                <div class="tv-footer__col col-md-2 col-md-offset-1 col-sm-3 col-xs-6">
+                    <div class="tv-footer-col">
+                        <div class="tv-footer-col__header">
+                            ADTV
+                        </div>
+                        <div class="tv-footer-col__list">
+                            <ul class="tv-col-list">
+                                <li class="tv-col-list__item">
+                                    <a class="tv-link tv-link_footer" href="#">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="tv-col-list__item">
+                                    <a class="tv-link tv-link_footer" href="#">
+                                        Our Story
+                                    </a>
+                                </li>
+                                <li class="tv-col-list__item">
+                                    <a class="tv-link tv-link_footer" href="#">
+                                        How It Works
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tv-footer__col col-md-2 col-md-offset-1 col-sm-3 col-xs-6">
+                    <div class="tv-footer-col">
+                        <div class="tv-footer-col__header">
+                            BROWSE
+                        </div>
+                        <div class="tv-footer-col__list">
+                            <ul class="tv-col-list">
+                                <li class="tv-col-list__item">
+                                    <a class="tv-link tv-link_footer" href="#">
+                                        Discover
+                                    </a>
+                                </li>
+                                <li class="tv-col-list__item">
+                                    <a class="tv-link tv-link_footer" href="#">
+                                        Collections
+                                    </a>
+                                </li>
+                                <li class="tv-col-list__item">
+                                    <a class="tv-link tv-link_footer" href="#">
+                                        Discover Video
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tv-footer__col col-md-2 col-md-offset-1 col-sm-3 col-xs-6">
+                    <div class="tv-footer-col">
+                        <div class="tv-footer-col__header">
+                            LEGAL
+                        </div>
+                        <div class="tv-footer-col__list">
+                            <ul class="tv-col-list">
+                                <li class="tv-col-list__item">
+                                    <a class="tv-link tv-link_footer" href="#">
+                                        Terms of Use
+                                    </a>
+                                </li>
+                                <li class="tv-col-list__item">
+                                    <a class="tv-link tv-link_footer" href="#">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="tv-col-list__item">
+                                    <a class="tv-link tv-link_footer" href="#">
+                                        Contributor Agreement
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tv-footer__col col-md-2 col-md-offset-1 col-sm-3 col-xs-6">
+                    <div class="tv-footer-col">
+                        <div class="tv-footer-col__header">
+                            CONTACT
+                        </div>
+                        <div class="tv-footer-col__list">
+                            <ul class="tv-col-list">
+                                <li class="tv-col-list__item">
+                                    <a class="tv-link tv-link_footer" href="#">
+                                        Customer Support
+                                    </a>
+                                </li>
+                                <li class="tv-col-list__item">
+                                    <a class="tv-link tv-link_footer" href="#">
+                                        info@asdasd.org
+                                    </a>
+                                </li>
+                                <li class="tv-col-list__item">
+                                    <a class="tv-link tv-link_footer" href="#">
+                                        1-855-79898
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
         </div>
     </footer>
     <!--<script>

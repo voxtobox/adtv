@@ -4,15 +4,12 @@
 //
 
 @import 'reset';
-//@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'variables';
 @import 'fix-bootstrap';
 
 // My Partials
-@import 'partials/elements';
-@import 'partials/header';
-@import 'partials/search';
-@import 'partials/main';
+@import 'partials/index';
 
 
 /*

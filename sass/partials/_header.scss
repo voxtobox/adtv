@@ -4,8 +4,15 @@
   background-color: $third-bg-color;
 }
 
+.tv-header__nav {
+  padding-top: 15px;
+}
+
 .tv-top-navbar {
- // @extend .navbar;
+  @extend .navbar;
+
+  padding-top: 15px;
+
   background-color: transparent;
   border: none;
 
@@ -15,31 +22,41 @@
   }
 }
 
+.tv-top-havbar-container{
+  @extend .container;
+}
+
+.tv-top-navbar__header {
+  @extend .navbar-header;
+}
+
 .tv-top-navbar-brand__logo{
- // @extend .navbar-brand;
+  padding: 0 15px;
+  margin-top: -8px;
+
 }
 
 .tv-top-navbar-brand__slogan{
  // @extend .navbar-text;
   font-style: italic;
-  font-size: 10px;
-  margin-top: 40px;
-  margin-bottom: 0;
+  font-size: .9em;
   margin-left: 5px;
+
+  line-height: 20px;
 }
 
 .tv-top-navbar__nav {
-  margin-top: 37px;
+  //margin-top: 37px;
 }
 
 .tv-top-navbar-nav {
  // @extend .navbar-nav, .nav;
 
-  padding-left: 40px;
+  //padding-left: 40px;
 }
 
 .tv-top-nav__item {
-  padding: 0 20px;
+  padding: 15px 20px;
 
   .tv-top-nav-item__link {
     padding: 0;
@@ -51,11 +68,15 @@
   }
 }
 
-.tv-header-navbar__sign {
-  float: right;
-  font-size: 1.2em;
+.tv-header-navbar__sign .tv-link{
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
 .tv-header__banner{
   //@extend .text-center;
+}
+
+.tv-header-banner__img {
+  max-width: 100%;
 }
