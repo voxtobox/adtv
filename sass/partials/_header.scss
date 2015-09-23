@@ -31,13 +31,15 @@
 }
 
 .tv-top-navbar-brand__logo{
+  @extend .navbar-brand;
   padding: 0 15px;
   margin-top: -8px;
+
 
 }
 
 .tv-top-navbar-brand__slogan{
- // @extend .navbar-text;
+  @extend .navbar-text, .hidden-sm;
   font-style: italic;
   font-size: .9em;
   margin-left: 5px;
@@ -50,7 +52,7 @@
 }
 
 .tv-top-navbar-nav {
- // @extend .navbar-nav, .nav;
+  @extend .navbar-nav, .nav;
 
   //padding-left: 40px;
 }
@@ -59,6 +61,8 @@
   padding: 15px 20px;
 
   .tv-top-nav-item__link {
+    @extend .tv-link;
+
     padding: 0;
 
     &:hover {
@@ -68,15 +72,29 @@
   }
 }
 
-.tv-header-navbar__sign .tv-link{
-  font-size: 1.1em;
-  font-weight: 500;
+.tv-header-navbar__sign {
+  @extend .nav, .navbar-nav, .navbar-right;
+
+  .tv-top-nav-item__link {
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
 }
 
+
 .tv-header__banner{
-  //@extend .text-center;
+  @extend .container;
+}
+
+.tv-header-banner{
+  @extend .row;
 }
 
 .tv-header-banner__img {
-  max-width: 100%;
+  @extend .text-center, .col-md-12;
+
+  img {
+    max-width: 100%;
+  }
 }

@@ -12,271 +12,273 @@
 </head>
 <body class="tv-page">
     <header class="tv-page__header">
-        <div class="tv-header__nav">
-            <nav class="tv-top-navbar navbar">
-                <div class="tv-top-havbar-container container">
-                    <div class="tv-top-navbar__header navbar-header">
-                        <a href="#" class="tv-top-navbar-brand__logo navbar-brand">
-                            <img class="tv-top-navbar-brand-logo__img" src="img/adtv-logo.png">
-                        </a>
-                        <p class="tv-top-navbar-brand__slogan navbar-text hidden-sm">
-                            Exposing Deceptions. Affirming the Truth.
-                        </p>
-                    </div>
-                    <div class="tv-top-navbar__nav ">
-                        <ul class="tv-top-navbar-nav navbar-nav nav">
-                            <li class="tv-top-nav__item">
-                                <a href="" class="tv-top-nav-item__link tv-link">Satellite Channel</a>
-                            </li>
-                            <li class="tv-top-nav__item">
-                                <a href="" class="tv-top-nav-item__link tv-link">About us</a>
-                            </li>
-                            <li class="tv-top-nav__item">
-                                <a href="" class="tv-top-nav-item__link tv-link">Contact us</a>
-                            </li>
-                            <li class="tv-top-nav__item">
-                                <a href="" class="tv-top-nav-item__link tv-link">Donate</a>
-                            </li>
-                            <li class="tv-top-nav__item">
-                                <a href="" class="tv-top-nav-item__link tv-link">Register</a>
-                            </li>
-                        </ul>
-                        <ul class="tv-header-navbar__sign nav navbar-nav navbar-right">
-                            <li class="tv-top-nav__item">
-                                <!--<span class="">-->
-                                    <a href="" class="tv-top-nav-item__link navbar-link tv-link">Sign In</a>
-                                <!--</span>-->
-                            </li>
-                        </ul>
-                    </div>
+        <div class="tv-header">
+            <div class="tv-header__nav">
+                <nav class="tv-top-navbar">
+                    <div class="tv-top-havbar-container">
+                        <div class="tv-top-navbar__header">
+                            <a href="#" class="tv-top-navbar-brand__logo">
+                                <img class="tv-top-navbar-brand-logo__img" src="img/adtv-logo.png">
+                            </a>
+                            <p class="tv-top-navbar-brand__slogan">
+                                Exposing Deceptions. Affirming the Truth.
+                            </p>
+                        </div>
+                        <div class="tv-top-navbar__nav">
+                            <ul class="tv-top-navbar-nav">
+                                <li class="tv-top-nav__item">
+                                    <a href="" class="tv-top-nav-item__link">Satellite Channel</a>
+                                </li>
+                                <li class="tv-top-nav__item">
+                                    <a href="" class="tv-top-nav-item__link">About us</a>
+                                </li>
+                                <li class="tv-top-nav__item">
+                                    <a href="" class="tv-top-nav-item__link">Contact us</a>
+                                </li>
+                                <li class="tv-top-nav__item">
+                                    <a href="" class="tv-top-nav-item__link">Donate</a>
+                                </li>
+                                <li class="tv-top-nav__item">
+                                    <a href="" class="tv-top-nav-item__link">Register</a>
+                                </li>
+                            </ul>
+                            <ul class="tv-header-navbar__sign">
+                                <li class="tv-top-nav__item">
+                                    <a href="" class="tv-top-nav-item__link">Sign In</a>
+                                </li>
+                            </ul>
+                        </div>
 
-                </div>
-            </nav>
-        </div>
-        <div class="tv-header container">
-            <div class="row">
-                <div class="tv-header__banner text-center col-md-12">
-                    <img class="tv-header-banner__img" src="img/adtv-banner.jpg" alt="banner"/>
+                    </div>
+                </nav>
+            </div>
+            <div class="tv-header__banner">
+                <div class="tv-header-banner">
+                    <div class="tv-header-banner__img">
+                        <img src="img/adtv-banner.jpg" alt="banner"/>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-    <div class="tv-page__search container">
-        <div class="tv-search row">
-            <div class="tv-search__item col-md-2 ">
-                <div class="tv-search-result">
-                    <span class="tv-search-result__number">
-                        45
-                    </span>
-                    <span class="tv-search-result__title text-uppercase">
-                        RESULTS
-                    </span>
+    <div class="tv-page__search">
+        <div class="tv-search">
+            <div class="tv-search-result">
+                <span class="tv-search-result__number">
+                    45
+                </span>
+                <span class="tv-search-result__title">
+                    RESULTS
+                </span>
+            </div>
+            <div class="tv-search-text">
+                <label class="tv-search-text__label" for="tv-search-text">SEARCH</label>
+                <div class="tv-search-text__input">
+                    <input id="tv-search-text" class="tv-search-text-input" type="text"/>
                 </div>
             </div>
-
-            <div class="tv-search__item col-md-3 col-md-push-5">
-                <div class="tv-search-sort-by">
-                    <label for="tv-sort-by" class="tv-search-sort-by__label tv-select-label">Sort by</label>
-                    <select name="sort-by" id="tv-sort-by" class="tv-search-sort-by__select tv-select">
+            <div class="tv-search-sort-by">
+                <label for="tv-sort-by" class="tv-select-label">Sort by</label>
+                <div class="tv-search-sort-by__select">
+                    <select name="sort-by" id="tv-sort-by" class="tv-search-sort-by-select">
                         <option value="popularity">Popularity</option>
                         <option value="date">Date</option>
                         <option value="length">Length</option>
                     </select>
                 </div>
             </div>
-            <div class="tv-search__item col-md-2 col-md-push-5">
-                <div class="tv-search-per-page">
-                    <label class="tv-search-per-page__label tv-select-label">Per page</label>
-                    <select name="per-page" id="tv-per-page" class="tv-search-per-page__select tv-select">
+            <div class="tv-search-per-page">
+                <label for="tv-per-page" class="tv-select-label">Per page</label>
+                <div class="tv-search-per-page__select">
+                    <select name="per-page" id="tv-per-page" class="tv-search-per-page-select">
                         <option value="8">8</option>
                         <option value="12">12</option>
                         <option value="24">24</option>
                     </select>
                 </div>
             </div>
-            <div class="tv-search__item col-md-5 col-md-pull-5">
-                <div class="tv-search-text">
-                    <label class="tv-search-text__label text-uppercase">
-                        SEARCH
-                    </label>
-                    <input class="tv-search-text__input tv-input-text" type="text"/>
-                </div>
-            </div>
         </div>
     </div>
-    <main class="tv-page__main container">
-        <div class="tv-main row">
-            <section class="tv-main__filters col-md-2">
-                <div class="tv-filters panel panel-default">
-                    <div class="tv-filters__title">
-                        Filters
-                    </div>
-                    <div class="tv-filters__block">
-                        <div class="tv-filters-block__title text-uppercase">LANGUAGE</div>
-                        <div class="tv-filters-block__checkboxes">
-                            <form name="language" class="tv-filters-block-checkboxes">
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-lan-english">
-                                        <input id="chbx-lan-english" type="checkbox" name="english" value="english"/>
-                                        <label class="tv-checkbox-check" for="chbx-lan-english"></label>
-                                        <span class="tv-checkbox-label">English</span>
-                                    </label>
-                                </div>
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-lan-other">
-                                        <input id="chbx-lan-other" type="checkbox" name="other" value="other"/>
-                                        <label class="tv-checkbox-check" for="chbx-lan-other"></label>
-                                        <span class="tv-checkbox-label">Other</span>
-                                    </label>
-                                </div>
-                            </form>
+    <main class="tv-page__main">
+        <div class="tv-main">
+            <section class="tv-main__filters">
+                <div class="tv-filters">
+                    <div class="tv-filters-row">
+                        <div class="tv-filters__title">
+                            Filters
                         </div>
-                    </div>
-                    <div class="tv-filters__block">
-                        <div class="tv-filters-block__title text-uppercase">TOPICS/CATEGORIES</div>
-                        <div class="tv-filters-block__checkboxes">
-                            <form name="language" class="tv-filters-block-checkboxes">
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-cat-our_times">
-                                        <input id="chbx-cat-our_times" type="checkbox" name="our_times" value="our_times"/>
-                                        <label class="tv-checkbox-check" for="chbx-cat-our_times"></label>
-                                        <span class="tv-checkbox-label">Our Times</span>
-                                    </label>
-                                </div>
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-cat-bible_topics">
-                                        <input id="chbx-cat-bible_topics" type="checkbox" name="bible_topics" value="bible_topics"/>
-                                        <label class="tv-checkbox-check" for="chbx-cat-bible_topics"></label>
-                                        <span class="tv-checkbox-label">Bible Topics</span>
-                                    </label>
-                                </div>
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-cat-creation">
-                                        <input id="chbx-cat-creation" type="checkbox" name="creation" value="creation"/>
-                                        <label class="tv-checkbox-check" for="chbx-cat-creation"></label>
-                                        <span class="tv-checkbox-label">Creation</span>
-                                    </label>
-                                </div>
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-cat-reformation">
-                                        <input id="chbx-cat-reformation" type="checkbox" name="reformation" value="reformation"/>
-                                        <label class="tv-checkbox-check" for="chbx-cat-reformation"></label>
-                                        <span class="tv-checkbox-label">Reformation</span>
-                                    </label>
-                                </div>
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-cat-media">
-                                        <input id="chbx-cat-media" type="checkbox" name="media" value="media"/>
-                                        <label class="tv-checkbox-check" for="chbx-cat-media"></label>
-                                        <span class="tv-checkbox-label">Media</span>
-                                    </label>
-                                </div>
+                        <div class="tv-filters__block">
+                            <div class="tv-filters-block__title">LANGUAGE</div>
+                            <div class="tv-filters-block__checkboxes">
+                                <form name="language" class="tv-filters-block-checkboxes">
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-lan-english">
+                                            <input id="chbx-lan-english" type="checkbox" name="english" value="english"/>
+                                            <label class="tv-checkbox-check" for="chbx-lan-english"></label>
+                                            <span class="tv-checkbox-label">English</span>
+                                        </label>
+                                    </div>
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-lan-other">
+                                            <input id="chbx-lan-other" type="checkbox" name="other" value="other"/>
+                                            <label class="tv-checkbox-check" for="chbx-lan-other"></label>
+                                            <span class="tv-checkbox-label">Other</span>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tv-filters__separator_md"></div>
+                        <div class="tv-filters__block">
+                            <div class="tv-filters-block__title">TOPICS/CATEGORIES</div>
+                            <div class="tv-filters-block__checkboxes">
+                                <form name="language" class="tv-filters-block-checkboxes">
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-cat-our_times">
+                                            <input id="chbx-cat-our_times" type="checkbox" name="our_times" value="our_times"/>
+                                            <label class="tv-checkbox-check" for="chbx-cat-our_times"></label>
+                                            <span class="tv-checkbox-label">Our Times</span>
+                                        </label>
+                                    </div>
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-cat-bible_topics">
+                                            <input id="chbx-cat-bible_topics" type="checkbox" name="bible_topics" value="bible_topics"/>
+                                            <label class="tv-checkbox-check" for="chbx-cat-bible_topics"></label>
+                                            <span class="tv-checkbox-label">Bible Topics</span>
+                                        </label>
+                                    </div>
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-cat-creation">
+                                            <input id="chbx-cat-creation" type="checkbox" name="creation" value="creation"/>
+                                            <label class="tv-checkbox-check" for="chbx-cat-creation"></label>
+                                            <span class="tv-checkbox-label">Creation</span>
+                                        </label>
+                                    </div>
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-cat-reformation">
+                                            <input id="chbx-cat-reformation" type="checkbox" name="reformation" value="reformation"/>
+                                            <label class="tv-checkbox-check" for="chbx-cat-reformation"></label>
+                                            <span class="tv-checkbox-label">Reformation</span>
+                                        </label>
+                                    </div>
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-cat-media">
+                                            <input id="chbx-cat-media" type="checkbox" name="media" value="media"/>
+                                            <label class="tv-checkbox-check" for="chbx-cat-media"></label>
+                                            <span class="tv-checkbox-label">Media</span>
+                                        </label>
+                                    </div>
 
-                            </form>
+                                </form>
+                            </div>
                         </div>
+                        <div class="tv-filters__separator_md"></div>
+                        <div class="tv-filters__block">
+                            <div class="tv-filters-block__title">FORMAT</div>
+                            <div class="tv-filters-block__checkboxes">
+                                <form name="language" class="tv-filters-block-checkboxes">
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-format-major_series">
+                                                <input id="chbx-format-major_series" type="checkbox" name="major_series" value="major_series"/>
+                                                <label class="tv-checkbox-check" for="chbx-format-major_series"></label>
+                                            <span class="tv-checkbox-label">Major Series</span>
+                                        </label>
+                                    </div>
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-format-single_sermons">
+                                            <input id="chbx-format-single_sermons" type="checkbox" name="single_sermons" value="single_sermons"/>
+                                            <label class="tv-checkbox-check" for="chbx-format-single_sermons"></label>
+                                            <span class="tv-checkbox-label">Single Sermons</span>
+                                        </label>
+                                    </div>
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-format-documentaries">
+                                            <input id="chbx-format-documentaries" type="checkbox" name="documentaries" value="documentaries"/>
+                                            <label class="tv-checkbox-check" for="chbx-format-documentaries"></label>
+                                            <span class="tv-checkbox-label">Documentaries</span>
+                                        </label>
+                                    </div>
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-format-news">
+                                            <input id="chbx-format-news" type="checkbox" name="news" value="news"/>
+                                            <label class="tv-checkbox-check" for="chbx-format-news"></label>
+                                            <span class="tv-checkbox-label">News</span>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tv-filters__separator_md"></div>
+                        <div class="tv-filters__block">
+                            <div class="tv-filters-block__title">SPEAKER</div>
+                            <div class="tv-filters-block__checkboxes">
+                                <form name="language" class="tv-filters-block-checkboxes">
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-speaker-walter_veith">
+                                            <input id="chbx-speaker-walter_veith" type="checkbox" name="major_series" value="major_series"/>
+                                            <label class="tv-checkbox-check" for="chbx-speaker-walter_veith"></label>
+                                            <span class="tv-checkbox-label">Walter Veith</span>
+                                        </label>
+                                    </div>
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-speaker-victor_gill">
+                                            <input id="chbx-speaker-victor_gill" type="checkbox" name="victor_gill" value="victor_gill"/>
+                                            <label class="tv-checkbox-check" for="chbx-speaker-victor_gill"></label>
+                                            <span class="tv-checkbox-label">Victor Gill</span>
+                                        </label>
+                                    </div>
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-speaker-daniel_pel">
+                                            <input id="chbx-speaker-daniel_pel" type="checkbox" name="daniel_pel" value="daniel_pel"/>
+                                            <label class="tv-checkbox-check" for="chbx-speaker-daniel_pel"></label>
+                                            <span class="tv-checkbox-label">Daniel Pel</span>
+                                        </label>
+                                    </div>
+                                    <div class="tv-filters-block-checkboxes__item">
+                                        <label class="tv-checkbox" for="chbx-speaker-others">
+                                            <input id="chbx-speaker-others" type="checkbox" name="others" value="others"/>
+                                            <label class="tv-checkbox-check" for="chbx-speaker-others"></label>
+                                            <span class="tv-checkbox-label">Others</span>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <section class="tv-filters__buttons">
+                            <div class="tv-filters__separator_xs"></div>
+                            <div class="tv-filters-buttons">
+                                <div class="tv-buttons__item">
+                                    <button class="tv-btn" type="button">
+                                        Satellite Info
+                                    </button>
+                                </div>
+                                <div class="tv-buttons__item">
+                                    <button class="tv-btn" type="button">
+                                        Watch live!
+                                    </button>
+                                </div>
+                                <div class="tv-buttons__item">
+                                    <button class="tv-btn" type="button">
+                                        Donate
+                                    </button>
+                                </div>
+                                <div class="tv-buttons__item">
+                                    <button class="tv-btn" type="button">
+                                        Discover
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <div class="tv-filters__block">
-                        <div class="tv-filters-block__title text-uppercase">FORMAT</div>
-                        <div class="tv-filters-block__checkboxes">
-                            <form name="language" class="tv-filters-block-checkboxes">
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-format-major_series">
-                                            <input id="chbx-format-major_series" type="checkbox" name="major_series" value="major_series"/>
-                                            <label class="tv-checkbox-check" for="chbx-format-major_series"></label>
-                                        <span class="tv-checkbox-label">Major Series</span>
-                                    </label>
-                                </div>
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-format-single_sermons">
-                                        <input id="chbx-format-single_sermons" type="checkbox" name="single_sermons" value="single_sermons"/>
-                                        <label class="tv-checkbox-check" for="chbx-format-single_sermons"></label>
-                                        <span class="tv-checkbox-label">Single Sermons</span>
-                                    </label>
-                                </div>
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-format-documentaries">
-                                        <input id="chbx-format-documentaries" type="checkbox" name="documentaries" value="documentaries"/>
-                                        <label class="tv-checkbox-check" for="chbx-format-documentaries"></label>
-                                        <span class="tv-checkbox-label">Documentaries</span>
-                                    </label>
-                                </div>
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-format-news">
-                                        <input id="chbx-format-news" type="checkbox" name="news" value="news"/>
-                                        <label class="tv-checkbox-check" for="chbx-format-news"></label>
-                                        <span class="tv-checkbox-label">News</span>
-                                    </label>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="tv-filters__block">
-                        <div class="tv-filters-block__title text-uppercase">SPEAKER</div>
-                        <div class="tv-filters-block__checkboxes">
-                            <form name="language" class="tv-filters-block-checkboxes">
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-speaker-walter_veith">
-                                        <input id="chbx-speaker-walter_veith" type="checkbox" name="major_series" value="major_series"/>
-                                        <label class="tv-checkbox-check" for="chbx-speaker-walter_veith"></label>
-                                        <span class="tv-checkbox-label">Walter Veith</span>
-                                    </label>
-                                </div>
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-speaker-victor_gill">
-                                        <input id="chbx-speaker-victor_gill" type="checkbox" name="victor_gill" value="victor_gill"/>
-                                        <label class="tv-checkbox-check" for="chbx-speaker-victor_gill"></label>
-                                        <span class="tv-checkbox-label">Victor Gill</span>
-                                    </label>
-                                </div>
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-speaker-daniel_pel">
-                                        <input id="chbx-speaker-daniel_pel" type="checkbox" name="daniel_pel" value="daniel_pel"/>
-                                        <label class="tv-checkbox-check" for="chbx-speaker-daniel_pel"></label>
-                                        <span class="tv-checkbox-label">Daniel Pel</span>
-                                    </label>
-                                </div>
-                                <div class="tv-filters-block-checkboxes__item">
-                                    <label class="tv-checkbox" for="chbx-speaker-others">
-                                        <input id="chbx-speaker-others" type="checkbox" name="others" value="others"/>
-                                        <label class="tv-checkbox-check" for="chbx-speaker-others"></label>
-                                        <span class="tv-checkbox-label">Others</span>
-                                    </label>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <section class="tv-filters__buttons text-center">
-                        <div class="tv-filtesrs-buttons">
-                            <div class="tv-buttons__item">
-                                <button class="tv-btn" type="button">
-                                    Satellite Info
-                                </button>
-                            </div>
-                            <div class="tv-buttons__item">
-                                <button class="tv-btn" type="button">
-                                    Watch live!
-                                </button>
-                            </div>
-                            <div class="tv-buttons__item">
-                                <button class="tv-btn" type="button">
-                                    Donate
-                                </button>
-                            </div>
-                            <div class="tv-buttons__item">
-                                <button class="tv-btn" type="button">
-                                    Discover
-                                </button>
-                            </div>
-                        </div>
-                    </section>
                 </div>
             </section>
-            <section class="tv-main__result col-md-10">
+            <section class="tv-main__result">
                 <div class="tv-videos">
                     <div class="tv-videos__tails">
-                        <div class="tv-tails row">
-                            <div class="tv-tails__item col-md-3">
-                               <a href="#" class="tv-tails-item text-center tv-link">
+                        <div class="tv-tails">
+                            <div class="tv-tails__item">
+                               <a href="#" class="tv-tails-item">
                                    <img class="tv-tails-item__img" style="background-image: url('img/thumb_1.jpg')">
                                    <div class="tv-tails-item__title">
                                        <div class="tv-thumb-title">
@@ -287,8 +289,8 @@
                                    </div>
                                </a>
                             </div>
-                            <div class="tv-tails__item col-md-3">
-                                <a href="#" class="tv-tails-item text-center tv-link">
+                            <div class="tv-tails__item">
+                                <a href="#" class="tv-tails-item">
                                     <img class="tv-tails-item__img" style="background-image: url('img/thumb_2.jpg')">
                                     <div class="tv-tails-item__title">
                                         <div class="tv-thumb-title">
@@ -299,8 +301,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="tv-tails__item col-md-3">
-                                <a href="#" class="tv-tails-item text-center tv-link">
+                            <div class="tv-tails__item">
+                                <a href="#" class="tv-tails-item">
                                     <img class="tv-tails-item__img" style="background-image: url('img/thumb_3.jpg')">
                                     <div class="tv-tails-item__title">
                                         <div class="tv-thumb-title">
@@ -311,8 +313,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="tv-tails__item col-md-3">
-                                <a href="#" class="tv-tails-item text-center tv-link">
+                            <div class="tv-tails__item">
+                                <a href="#" class="tv-tails-item">
                                     <img class="tv-tails-item__img" style="background-image: url('img/thumb_1.jpg')">
                                     <div class="tv-tails-item__title">
                                         <div class="tv-thumb-title">
@@ -323,8 +325,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="tv-tails__item col-md-3">
-                                <a href="#" class="tv-tails-item text-center tv-link">
+                            <div class="tv-tails__item">
+                                <a href="#" class="tv-tails-item">
                                     <img class="tv-tails-item__img" style="background-image: url('img/thumb_2.jpg')">
                                     <div class="tv-tails-item__title">
                                         <div class="tv-thumb-title">
@@ -335,8 +337,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="tv-tails__item col-md-3">
-                                <a href="#" class="tv-tails-item text-center tv-link">
+                            <div class="tv-tails__item">
+                                <a href="#" class="tv-tails-item">
                                     <img class="tv-tails-item__img" style="background-image: url('img/thumb_3.jpg')">
                                     <div class="tv-tails-item__title">
                                         <div class="tv-thumb-title">
@@ -347,8 +349,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="tv-tails__item col-md-3">
-                                <a href="#" class="tv-tails-item text-center tv-link">
+                            <div class="tv-tails__item">
+                                <a href="#" class="tv-tails-item">
                                     <img class="tv-tails-item__img" style="background-image: url('img/thumb_1.jpg')">
                                     <div class="tv-tails-item__title">
                                         <div class="tv-thumb-title">
@@ -359,8 +361,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="tv-tails__item col-md-3">
-                                <a href="#" class="tv-tails-item text-center tv-link">
+                            <div class="tv-tails__item">
+                                <a href="#" class="tv-tails-item">
                                     <img class="tv-tails-item__img" style="background-image: url('img/thumb_2.jpg')">
                                     <div class="tv-tails-item__title">
                                         <div class="tv-thumb-title">
@@ -374,11 +376,11 @@
                         </div>
                     </div>
 
-                    <div class="tv-videos__pagination row">
-                        <nav class="tv-pagination col-md-7 col-md-offset-5">
+                    <div class="tv-videos__pagination">
+                        <nav class="tv-pagination">
                             <ul class="tv-pagination-list">
                                 <li class="tv-pagination__item">
-                                    <a href="#" class="tv-link ">
+                                    <a href="#" class="tv-link">
                                         &lt;&lt; FIRST
                                     </a>
                                 </li>
@@ -428,9 +430,9 @@
         </div>
     </main>
     <footer class="tv-page__footer">
-        <div class="tv-footer container">
-            <nav class="row">
-                <div class="tv-footer__col col-md-2 col-md-offset-1 col-sm-3 col-xs-6">
+        <div class="tv-footer">
+            <nav class="tv-footer-nav">
+                <div class="tv-footer__col">
                     <div class="tv-footer-col">
                         <div class="tv-footer-col__header">
                             ADTV
@@ -457,7 +459,7 @@
 
                     </div>
                 </div>
-                <div class="tv-footer__col col-md-2 col-md-offset-1 col-sm-3 col-xs-6">
+                <div class="tv-footer__col">
                     <div class="tv-footer-col">
                         <div class="tv-footer-col__header">
                             BROWSE
@@ -483,7 +485,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tv-footer__col col-md-2 col-md-offset-1 col-sm-3 col-xs-6">
+                <div class="tv-footer__col">
                     <div class="tv-footer-col">
                         <div class="tv-footer-col__header">
                             LEGAL
@@ -509,7 +511,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tv-footer__col col-md-2 col-md-offset-1 col-sm-3 col-xs-6">
+                <div class="tv-footer__col">
                     <div class="tv-footer-col">
                         <div class="tv-footer-col__header">
                             CONTACT
@@ -517,17 +519,17 @@
                         <div class="tv-footer-col__list">
                             <ul class="tv-col-list">
                                 <li class="tv-col-list__item">
-                                    <a class="tv-link tv-link_footer" href="#">
+                                    <a class="tv-link_footer" href="#">
                                         Customer Support
                                     </a>
                                 </li>
                                 <li class="tv-col-list__item">
-                                    <a class="tv-link tv-link_footer" href="#">
+                                    <a class="tv-link_footer" href="#">
                                         info@asdasd.org
                                     </a>
                                 </li>
                                 <li class="tv-col-list__item">
-                                    <a class="tv-link tv-link_footer" href="#">
+                                    <a class="tv-link_footer" href="#">
                                         1-855-79898
                                     </a>
                                 </li>
@@ -539,7 +541,7 @@
             </nav>
         </div>
     </footer>
-    <!--<script>
+   <!-- <script>
     javascript:(function(){var s=document.createElement("script");s.onload=function(){bootlint.showLintReportForCurrentDocument([]);};s.src="https://maxcdn.bootstrapcdn.com/bootlint/latest/bootlint.min.js";document.body.appendChild(s)})();
     </script>-->
 

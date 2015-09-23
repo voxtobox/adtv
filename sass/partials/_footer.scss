@@ -3,11 +3,19 @@
 }
 
 .tv-footer {
+  @extend .container;
+
   padding-top: 50px;
   padding-bottom: 20px;
 }
 
+.tv-footer-nav {
+  @extend .row;
+}
+
 .tv-footer__col {
+  @extend .col-md-2, .col-md-offset-1, .col-sm-3, .col-xs-6;
+
   margin-bottom: 20px;
 }
 
