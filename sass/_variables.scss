@@ -4,6 +4,8 @@
 
 
 
+// Fonts size
+$font-size: 12px;
 
 // Background colors: main, second - dark element, third - header and footer
 $main-bg-color: #262626;
@@ -74,7 +76,7 @@ $arrow-for-select: '../img/select-arrow.png';
 .tv-main-font {
   font-family: Roboto, sans-serif;
   color: $main-color;
-  font-size: 10px;
+  font-size: $font-size;
   font-weight: 100;
 }
 

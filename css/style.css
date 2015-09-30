@@ -805,7 +805,7 @@ pre {
   .row:after, .tv-header-banner:after, .tv-main:after, .tv-filters-row:after, .tv-filters-buttons:after, .tv-tails:after, .tv-videos__pagination:after, .tv-search:after, .tv-footer-nav:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .tv-search-per-page, .col-md-2, .tv-search-result, .tv-search-per-page, .tv-footer__col, .col-lg-2, .col-xs-3, .col-sm-3, .tv-filters__block, .tv-buttons__item, .tv-tails__item, .tv-footer__col, .col-md-3, .tv-main__filters, .tv-search-sort-by, .col-lg-3, .col-xs-4, .col-sm-4, .tv-search-sort-by, .col-md-4, .col-lg-4, .col-xs-5, .tv-search-per-page, .col-sm-5, .col-md-5, .tv-search-text, .col-lg-5, .col-xs-6, .tv-filters__block, .tv-buttons__item, .tv-tails__item, .tv-footer__col, .col-sm-6, .tv-search-text, .col-md-6, .col-lg-6, .col-xs-7, .tv-search-sort-by, .col-sm-7, .col-md-7, .tv-pagination, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .tv-main__result, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .tv-filters__title, .tv-filters__separator, .tv-filters__separator_md, .tv-filters__separator_xs, .tv-filters__buttons, .tv-pagination, .tv-search-text, .col-sm-12, .tv-search-result, .col-md-12, .tv-header-banner__img, .tv-filters__block, .tv-buttons__item, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .tv-search-per-page, .col-md-2, .tv-search-result, .tv-search-per-page, .tv-footer__col, .col-lg-2, .col-xs-3, .col-sm-3, .tv-filters__block, .tv-buttons__item, .tv-tails__item, .tv-footer__col, .col-md-3, .tv-main__filters, .tv-search-sort-by, .col-lg-3, .col-xs-4, .col-sm-4, .tv-search-sort-by, .col-md-4, .col-lg-4, .col-xs-5, .tv-search-per-page, .col-sm-5, .col-md-5, .tv-search-text, .col-lg-5, .col-xs-6, .tv-filters__block, .tv-buttons__item, .tv-tails__item, .tv-footer__col, .col-sm-6, .tv-search-text, .col-md-6, .col-lg-6, .col-xs-7, .tv-search-sort-by, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .tv-pagination, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .tv-main__result, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .tv-filters__title, .tv-filters__separator, .tv-filters__separator_md, .tv-filters__separator_xs, .tv-filters__buttons, .tv-pagination, .tv-search-text, .col-sm-12, .tv-search-result, .col-md-12, .tv-header-banner__img, .tv-filters__block, .tv-buttons__item, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1124,7 +1124,7 @@ pre {
   .col-sm-offset-12 {
     margin-left: 100%; } }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .tv-search-result, .tv-search-per-page, .tv-footer__col, .col-md-3, .tv-main__filters, .tv-search-sort-by, .col-md-4, .col-md-5, .tv-search-text, .col-md-6, .col-md-7, .tv-pagination, .col-md-8, .col-md-9, .tv-main__result, .col-md-10, .col-md-11, .col-md-12, .tv-header-banner__img, .tv-filters__block, .tv-buttons__item {
+  .col-md-1, .col-md-2, .tv-search-result, .tv-search-per-page, .tv-footer__col, .col-md-3, .tv-main__filters, .tv-search-sort-by, .col-md-4, .col-md-5, .tv-search-text, .col-md-6, .col-md-7, .col-md-8, .tv-pagination, .col-md-9, .tv-main__result, .col-md-10, .col-md-11, .col-md-12, .tv-header-banner__img, .tv-filters__block, .tv-buttons__item {
     float: left; }
 
   .col-md-1 {
@@ -1145,10 +1145,10 @@ pre {
   .col-md-6 {
     width: 50%; }
 
-  .col-md-7, .tv-pagination {
+  .col-md-7 {
     width: 58.33333%; }
 
-  .col-md-8 {
+  .col-md-8, .tv-pagination {
     width: 66.66667%; }
 
   .col-md-9, .tv-main__result {
@@ -1253,10 +1253,10 @@ pre {
   .col-md-offset-3 {
     margin-left: 25%; }
 
-  .col-md-offset-4 {
+  .col-md-offset-4, .tv-pagination {
     margin-left: 33.33333%; }
 
-  .col-md-offset-5, .tv-pagination {
+  .col-md-offset-5 {
     margin-left: 41.66667%; }
 
   .col-md-offset-6 {
@@ -5004,7 +5004,7 @@ button.close {
 .tv-main-font, body {
   font-family: Roboto, sans-serif;
   color: #aaa;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 100; }
 
 .tv-inset-shadow, .tv-input-text, .tv-search-text-input, .tv-filters, .tv-tails-item::before {
@@ -5499,7 +5499,7 @@ button.close {
   margin-right: 5px; }
 
 .tv-search-text__input {
-  margin-left: 50px;
+  margin-left: 58px;
   margin-right: 15px; }
 
 .tv-search-text-input {
@@ -5507,7 +5507,7 @@ button.close {
   padding: 0 5px; }
 
 .tv-search-sort-by__select {
-  margin-left: 35px; }
+  margin-left: 38px; }
 
 .tv-search-sort-by-select {
   width: 100%;
@@ -5515,7 +5515,7 @@ button.close {
   padding: 0 8px; }
 
 .tv-search-per-page__select {
-  margin-left: 40px; }
+  margin-left: 46px; }
 
 .tv-search-per-page-select {
   max-width: 50px;
