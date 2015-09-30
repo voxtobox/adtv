@@ -10,16 +10,30 @@
   &:hover, &:focus {
     //background-color: transparent;
     text-decoration: underline;
-    color: #fff;
+    color: $link-color;
+    font-weight: 500;
+  }
+
+  &_header {
+    color: $link-color-header;
+    font-weight: 500;
+    &:hover {
+      color: $link-color-header-hover;
+    }
+
   }
 
   &_current {
-    color: #fff;
+    font-weight: 500;
   }
 
   &_footer {
     @extend .tv-link;
-    color: $main-color;
+    color: $link-color-footer;
+
+    &:hover {
+      color: $link-color-footer-hover;
+    }
   }
 }
 
@@ -106,7 +120,7 @@
     visibility: hidden;
     &:checked + label{
       @extend .tv-form-elem-pushed-shadow;
-      background: $third-bg-color;
+      background: $main-bg-color;
     }
     &:checked + label:after {
       opacity: 1;
@@ -114,14 +128,14 @@
   }
 
   .tv-checkbox-label {
-    font-weight: 100;
+    font-weight: 300;
     margin: 0 0 0 7px;
   }
 }
 
 .tv-select-label {
   margin-right: 5px;
-  font-weight: 200;
+  font-weight: 300;
   font-size: .8em;
   float: left;
 }

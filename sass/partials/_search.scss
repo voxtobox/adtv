@@ -13,10 +13,10 @@
   @extend .row;
 
   padding-top: 20px;
-  color: #fff;
+  color: $search-color;
   font-size: 1.1em;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .tv-search__block {
@@ -44,7 +44,7 @@
 }
 
 .tv-search-result__title {
-  font-weight: 100;
+  font-weight: 300;
 }
 
 // text

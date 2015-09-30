@@ -66,7 +66,7 @@
             <div class="tv-header__banner">
                 <div class="tv-header-banner">
                     <div class="tv-header-banner__img">
-                        <img src="img/adtv-banner.jpg" alt="banner"/>
+                        <img src="img/adtv-banner_inv.jpg" alt="banner"/>
                     </div>
                 </div>
             </div>
@@ -552,6 +552,30 @@
             </nav>
         </div>
     </footer>
+
+    <script>
+        var a01 = 40, a10 = 30;
+        function f(){
+            if (typeof a10 == undefined){
+                console.log(a10);
+                a10 == 20;
+            }
+
+            console.log('a10 = ' + a10 + ' a01 = ' + a01);
+            if (a10&&a01){
+                console.log('second');
+                return a01;
+            }
+
+            var a01, a10 = 10;
+            console.log(a10 + a01);
+            if(a10){
+                return String(a10+a01).length;
+            }
+        }
+
+        console.log(f());
+    </script>
    <!-- <script>
     javascript:(function(){var s=document.createElement("script");s.onload=function(){bootlint.showLintReportForCurrentDocument([]);};s.src="https://maxcdn.bootstrapcdn.com/bootlint/latest/bootlint.min.js";document.body.appendChild(s)})();
     </script>-->

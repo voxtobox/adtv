@@ -58,6 +58,7 @@
 
 .tv-top-navbar-brand__slogan{
   @extend .navbar-text, .hidden-sm;
+  color: $link-color-header;
   font-style: italic;
   font-size: .9em;
   margin-left: 5px;
@@ -70,8 +71,8 @@
 
   @include xs {
     @include box-shadow($separator-shadow, inset $separator-shadow);
-    border-top: solid 2px $dark-border;
-    border-bottom: solid 2px $dark-border;
+    //border-top: solid 2px $dark-border;
+    //border-bottom: solid 2px $dark-border;
   }
 }
 
@@ -85,7 +86,7 @@
   padding: 15px 20px;
 
   .tv-top-nav-item__link {
-    @extend .tv-link;
+    @extend .tv-link, .tv-link_header;
 
     padding: 0;
 
@@ -99,7 +100,7 @@
 .tv-top-nav__separator {
   @extend .hidden-xs;
   @include box-shadow($separator-side-shadow);
-  border-right: 2px solid $dark-border;
+  //border-right: 2px solid $dark-border;
 
   content: " ";
   display: inline-block;
