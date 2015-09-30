@@ -22,6 +22,24 @@
   }
 }
 
+.tv-top-navbar-btn{
+  @extend .navbar-toggle;
+  @extend .tv-btn;
+
+  padding: 0 18px;
+  width: 50px;
+  .tv-icon-bar {
+    @extend .icon-bar;
+    width: 12px;
+    height: 1px;
+    background-color: $main-color;
+    + .icon-bar {
+      margin-top: 2px;
+    }
+  }
+
+}
+
 .tv-top-havbar-container{
   @extend .container;
 }
@@ -48,7 +66,13 @@
 }
 
 .tv-top-navbar__nav {
-  //margin-top: 37px;
+  @extend .navbar-collapse, .collapse;
+
+  @include xs {
+    @include box-shadow($separator-shadow, inset $separator-shadow);
+    border-top: solid 2px $dark-border;
+    border-bottom: solid 2px $dark-border;
+  }
 }
 
 .tv-top-navbar-nav {
@@ -72,9 +96,39 @@
   }
 }
 
+.tv-top-nav__separator {
+  @extend .hidden-xs;
+  @include box-shadow($separator-side-shadow);
+  border-right: 2px solid $dark-border;
+
+  content: " ";
+  display: inline-block;
+  height: 30px;
+  margin-top: -5px;
+  width: 100%;
+  min-width: 6px;
+
+
+  /*@include sm {
+    @include box-shadow($separator-side-shadow);
+  border-right: 2px solid $dark-border;
+  }
+  @include xs {
+    @include box-shadow($separator-shadow);
+    border-bottom: 2px solid $dark-border;
+    height: 6px;
+  }*/
+}
+
 .tv-header-navbar__sign {
   @extend .nav, .navbar-nav, .navbar-right;
 
+ // margin-right: 0;
+  .tv-top-nav__item {
+    @include sm {
+      padding-right: 0;
+    }
+  }
   .tv-top-nav-item__link {
     font-size: 1.1em;
     font-weight: 500;

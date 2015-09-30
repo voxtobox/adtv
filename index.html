@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,300italic,100' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body class="tv-page">
     <header class="tv-page__header">
@@ -17,6 +18,11 @@
                 <nav class="tv-top-navbar">
                     <div class="tv-top-havbar-container">
                         <div class="tv-top-navbar__header">
+                            <button type="button" class="tv-top-navbar-btn" data-toggle="collapse" data-target="#tv-top-nav" aria-expanded="false">
+                                <span class="tv-icon-bar"></span>
+                                <span class="tv-icon-bar"></span>
+                                <span class="tv-icon-bar"></span>
+                            </button>
                             <a href="#" class="tv-top-navbar-brand__logo">
                                 <img class="tv-top-navbar-brand-logo__img" src="img/adtv-logo.png">
                             </a>
@@ -24,7 +30,8 @@
                                 Exposing Deceptions. Affirming the Truth.
                             </p>
                         </div>
-                        <div class="tv-top-navbar__nav">
+                        <div>
+                        <div class="tv-top-navbar__nav collapse navbar-collapse" id="tv-top-nav">
                             <ul class="tv-top-navbar-nav">
                                 <li class="tv-top-nav__item">
                                     <a href="" class="tv-top-nav-item__link">Satellite Channel</a>
@@ -46,7 +53,11 @@
                                 <li class="tv-top-nav__item">
                                     <a href="" class="tv-top-nav-item__link">Sign In</a>
                                 </li>
+                                <li class="tv-top-nav__item">
+                                    <div class="tv-top-nav__separator"></div>
+                                </li>
                             </ul>
+                        </div>
                         </div>
 
                     </div>

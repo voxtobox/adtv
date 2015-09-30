@@ -25,7 +25,7 @@
 
 // Common button
 .tv-btn {
-  @extend .dark-element, .tv-btn-gradient, .tv-btn-shadow;
+  @extend .tv-dark-element, .tv-btn-gradient, .tv-btn-shadow;
   @include border-radius(1px);
 
   background-color: $main-bg-color;
@@ -57,7 +57,7 @@
 
 
 .tv-input-text{
-  @extend .dark-element;
+  @extend .tv-dark-element;
   @extend .tv-inset-shadow;
   padding: 5px;
 }

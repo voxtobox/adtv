@@ -21,7 +21,7 @@
 
 .tv-filters {
   @extend .panel, .panel-default;
-  @extend .dark-element, .tv-inset-shadow;
+  @extend .tv-dark-element, .tv-inset-shadow;
   background-color: $second-bg-color;
 
   padding: 20px 10px;
@@ -145,6 +145,8 @@
 
 .tv-tails {
   @extend .row;
+  margin: 0;
+
 }
 
 .tv-tails__item {
@@ -155,7 +157,7 @@
 
 .tv-tails-item {
   @extend .text-center;
-  @extend .dark-element, .tv-link;
+  @extend .tv-dark-element, .tv-link;
   display: inline-block;
   width: 122px;
   height: 120px;
@@ -201,13 +203,13 @@
 
 .tv-videos__pagination {
   @extend .row;
-  @extend .no-pad;
-  padding-left: 10px;
-  padding-top: 10px;
+  margin-right: 0;
+  padding-left: 5px;
+  padding-bottom: 10px;
 }
 
 .tv-pagination {
-  @extend .col-md-7, .col-md-offset-5;
+  @extend .col-md-7, .col-md-offset-5, .col-xs-12;
 }
 
 .tv-pagination__item{

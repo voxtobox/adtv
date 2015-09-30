@@ -30,6 +30,7 @@ $inset-shadow: 0 1px 1px rgba(0,0,0,0.4);
 $light-line-shadow: 0 2px 0 -1px rgba(255, 255, 255, .1);
 $bulge-shadow: 0 1px 1px rgba(0,0,0,.2);
 $separator-shadow: 0 3px 1px -2px rgba(255,255,255,.1);
+$separator-side-shadow: 3px 0 1px -2px rgba(255,255,255,.1);
 
 // Path to arrow for select image
 $arrow-for-select: '../img/select-arrow.png';
@@ -37,10 +38,16 @@ $arrow-for-select: '../img/select-arrow.png';
 
 
 // Mixin for border radius with vendor prefix
-@mixin border-radius($val) {
+@mixin border-radius ($val) {
   -webkit-border-radius: $val;
   -moz-border-radius: $val;
   border-radius: $val;
+}
+
+@mixin box-shadow ($set...) {
+  -webkit-box-shadow: $set;
+  -moz-box-shadow: $set;
+  box-shadow: $set;
 }
 
 @mixin transform($transforms) {
@@ -52,18 +59,19 @@ $arrow-for-select: '../img/select-arrow.png';
 }
 
 @mixin rotate($deg) {
-  @include transform(rotateX(#{$deg}deg))
+  @include transform(rotateX(#{$deg}deg));
+  @include transform(rotate(#{$deg}deg));
 }
 
 // Dark element in main section
-.dark-element {
+.tv-dark-element {
   border: 1px solid $dark-border;
   @include border-radius(3px);
   background-color: $second-bg-color;
 }
 
 // Set main font
-.main-font {
+.tv-main-font {
   font-family: Roboto, sans-serif;
   color: $main-color;
   font-size: 10px;
@@ -72,38 +80,33 @@ $arrow-for-select: '../img/select-arrow.png';
 
 // Shadow for inset effect
 .tv-inset-shadow {
-  -webkit-box-shadow: inset $inset-shadow;
-  -moz-box-shadow: inset $inset-shadow;
-  box-shadow: inset $inset-shadow;
+  @include box-shadow(inset $inset-shadow);
 }
 
 // Shadow for pushed form element
 .tv-form-elem-pushed-shadow {
-  -webkit-box-shadow: inset $inset-shadow, $light-line-shadow;
-  -moz-box-shadow: inset $inset-shadow, $light-line-shadow;
-  box-shadow: inset $inset-shadow, $light-line-shadow;
+  @inclue box-shadow(inset $inset-shadow, $light-line-shadow);
 }
 
 // Shadow for cut effect for form element (white bottom line)
 .tv-form-element-shadow {
-  -webkit-box-shadow: $light-line-shadow;
-  -moz-box-shadow: $light-line-shadow;
-  box-shadow: $light-line-shadow;
+  @include box-shadow($light-line-shadow)
+
 }
 
 // Shadow for box separator line in filter section (white bottom line)
 .tv-box-separ-shadow {
-  -webkit-box-shadow: $separator-shadow;
-  -moz-box-shadow: $separator-shadow;
-  box-shadow: $separator-shadow;
+  @include box-shadow($separator-shadow);
+}
+
+.tv-box-separ-side-shadow {
+  @include box-shadow($separator-side-shadow);
 }
 
 
 // Shadow for 3d effect for button (white top line and outline shadow)
 .tv-btn-shadow {
-  -webkit-box-shadow: inset $light-line-shadow, $bulge-shadow;
-  -moz-box-shadow: inset $light-line-shadow, $bulge-shadow;
-  box-shadow: inset $light-line-shadow, $bulge-shadow;
+  @include box-shadow(inset $light-line-shadow, $bulge-shadow);
 }
 
 // Gradient for btn and form elements
