@@ -5145,25 +5145,25 @@ button.close {
   font-weight: 300; }
   .tv-link:hover, .tv-link_footer:hover, .tv-top-nav__item .tv-top-nav-item__link:hover, .tv-tails-item:hover, .tv-link:focus, .tv-link_footer:focus, .tv-top-nav__item .tv-top-nav-item__link:focus, .tv-tails-item:focus {
     text-decoration: underline;
-    color: #4585A8;
-    font-weight: 500; }
+    color: #155A7F; }
   .tv-link_header, .tv-top-nav__item .tv-top-nav-item__link {
     color: #f3efe5;
     font-weight: 500; }
     .tv-link_header:hover, .tv-top-nav__item .tv-top-nav-item__link:hover {
-      color: #fff; }
+      color: #c55e24; }
   .tv-link_current {
+    color: #155A7F;
     font-weight: 500; }
   .tv-link_footer {
     color: #f3efe5; }
     .tv-link_footer:hover {
-      color: #fff; }
+      color: #c55e24; }
 
 .tv-btn, .tv-top-navbar-btn {
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
-  background-color: #f3efe5;
+  background-color: #e6eaeb;
   width: 95px;
   height: 25px;
   font-size: .9em;
@@ -5230,7 +5230,7 @@ button.close {
   .tv-checkbox input[type=checkbox] {
     visibility: hidden; }
     .tv-checkbox input[type=checkbox]:checked + label {
-      background: #f3efe5; }
+      background: #e6eaeb; }
     .tv-checkbox input[type=checkbox]:checked + label:after {
       opacity: 1; }
   .tv-checkbox .tv-checkbox-label {
@@ -5293,7 +5293,7 @@ button.close {
     outline: none; }
 
 .tv-page__header {
-  background-color: #06717B; }
+  background-color: #2f5361; }
 
 .tv-header__nav {
   padding-top: 15px; }
@@ -5531,7 +5531,7 @@ button.close {
   padding: 0 8px; }
 
 .tv-page__footer {
-  background-color: #06717B; }
+  background-color: #2f5361; }
 
 .tv-footer {
   padding-top: 50px;
@@ -5554,6 +5554,6 @@ button.close {
 * ADTV styles
 */
 body {
-  background-color: #f3efe5; }
+  background-color: #e6eaeb; }
 
 /*# sourceMappingURL=style.css.map */

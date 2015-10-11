@@ -8,9 +8,9 @@
 $font-size: 12px;
 
 // Background colors: main, second - dark element, third - header and footer
-$main-bg-color: #f3efe5; //#262626;
+$main-bg-color: #e6eaeb; //#262626;
 $second-bg-color: #fff; //#212121;
-$third-bg-color: #06717B; //#1d1d1d;
+$third-bg-color: #2f5361; //#1d1d1d;
 
 // Border colors
 $dark-border: #e5e1d6; //#191919;
@@ -23,10 +23,11 @@ $search-color: #333;
 
 // Link color
 $link-color: #4585A8;
+$link-color-hover: #155A7F;
 $link-color-header: #f3efe5;
 $link-color-footer: #f3efe5;
-$link-color-header-hover: #fff;
-$link-color-footer-hover: #fff;
+$link-color-header-hover: #c55e24;
+$link-color-footer-hover: #c55e24;
 
 // Two colors gradient for buttons and forms elements
 $btn-gradient-1: #fffefb; //#2f2f2f;

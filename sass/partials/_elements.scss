@@ -10,8 +10,7 @@
   &:hover, &:focus {
     //background-color: transparent;
     text-decoration: underline;
-    color: $link-color;
-    font-weight: 500;
+    color: $link-color-hover;
   }
 
   &_header {
@@ -24,6 +23,7 @@
   }
 
   &_current {
+    color: $link-color-hover;
     font-weight: 500;
   }
 
